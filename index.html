@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Guitar Tuner</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/clean-blog.min.css" rel="stylesheet">
+    <link href="./css/tuner.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="./js/extensions.js"></script>
+    <script type="text/javascript" src="./js/guitar_tuner.js"></script>
+    <script type="text/javascript" src="./js/processor.js"></script>
+    <script type="text/javascript" src="./js/dsp.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/tuner_ui.js"></script>
+
+    <script type="text/javascript">
+        function initialize() {
+            var processor = new GuitarTuner.Processor(new GuitarTuner.TunerDrawer());
+            processor.init(function () {
+                // todo on ready
+            }, function (e) {
+                // todo on error
+            });
+
+            window.tuner = new TunerUI({divFact: 10, note: 'E'});
+        }
+    </script>
+</head>
+
+<body onload="initialize();">
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Guitar Tuner </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <span id="tunerMeter"/>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">Copyright &copy; M-FOX 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.tunerBlock {
+	background:#d6901e;
+	position: relative;
+	
+	box-shadow: inset 0 0 5px 5px #974424;
+	-webkit-box-shadow: inset 0 0 5px 5px #974424;
+	-o-box-shadow: inset 0 0 5px 5px #974424;
+	-moz-box-shadow: inset 0 0 5px 5px #974424;
+	
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-o-border-radius:50%;
+	-moz-border-radius:50%;
+}
+.tunerArrow{
+	position:absolute;
+	width:100%;
+	z-index:10;	
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;	
+}
+.levelPosition {
+	position: absolute;
+	color: #FFF;
+	text-align: center;
+	line-height: 80px;
+	font-family:arial;
+	font-size: 30px;
+	font-weight:bold;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: #a74d1b;
+	box-shadow: 0 0 3px 3px #342e2e;
+	-webkit-box-shadow: 0 0 3px 3px #342e2e;
+	-moz-box-shadow: 0 0 3px 3px #342e2e;
+	-o-box-shadow: 0 0 3px 3px #342e2e;
+}
+.fonts
+{
+	font-family:arial;
+	font-weight:bold;
+	width:100%;
+	text-align:center;
+}
+
+.tunerArrow div{
+	background: #000000;
+	position: absolute;
+	height: 100%;
+	top: 0;
+}
+.num,.nob{
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-moz-transition: opacity 1s;	
+	position: absolute;
+	opacity: 1;
+}
+.nob{
+	
+	background:#eee;
+	box-shadow: 0 0 2px 1px #eee;
+	-webkit-box-shadow: 0 0 2px 1px #eee;
+	-moz-box-shadow: 0 0 2px 1px #eee;
+	-o-box-shadow: 0 0 2px 1px #eee;
+}
+.num{
+	color:#eee;
+	text-align: left;
+	overflow: hidden;
+	opacity: 1;
+	font-family: arial;
+	font-size: 16px;
+    font-weight: bold;
+}
